@@ -19,7 +19,7 @@ export default function Home() {
       </Typography>
       <section className="mt-2 grid grid-cols-3 gap-2">
         {cards.map((item) => (
-          <ButtonLink variant="outline" size="base" href={item.link}>
+          <ButtonLink variant="outline" size="sm" href={item.link}>
             {item.title}
           </ButtonLink>
         ))}
