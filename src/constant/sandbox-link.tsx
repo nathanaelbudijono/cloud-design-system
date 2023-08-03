@@ -2,19 +2,19 @@ const sandbox = {
   cards: [
     {
       title: "Typography",
-      link: "sandbox/typography",
+      link: "/sandbox/typography",
     },
     {
       title: "Links",
-      link: "sandbox/links",
+      link: "/sandbox/links",
     },
     {
       title: "Button",
-      link: "sandbox/button",
+      link: "/sandbox/button",
     },
     {
       title: "Tooltip",
-      link: "sandbox/tooltip",
+      link: "/sandbox/tooltip",
     },
   ],
 };
