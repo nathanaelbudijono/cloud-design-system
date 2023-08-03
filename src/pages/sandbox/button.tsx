@@ -64,6 +64,9 @@ export default function Buttons() {
       </section>
       {/* end region, icon buttons
       start region, button links */}
+      <Typography variant="h4" className="mt-3">
+        Button Links
+      </Typography>
       <section className="flex-list">
         <div className="flex-center">
           <ButtonLink
