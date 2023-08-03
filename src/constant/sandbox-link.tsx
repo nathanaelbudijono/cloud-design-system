@@ -12,6 +12,10 @@ const sandbox = {
       title: "Button",
       link: "sandbox/button",
     },
+    {
+      title: "Tooltip",
+      link: "sandbox/tooltip",
+    },
   ],
 };
 

@@ -19,7 +19,7 @@ export default function Home() {
           repository
         </ArrowLink>
       </Typography>
-      <section className="mt-2 grid grid-cols-3 gap-2">
+      <section className="mt-2 grid grid-cols-4 gap-2">
         {cards.map((item) => (
           <ButtonLink variant="outline" size="sm" href={item.link}>
             {item.title}
