@@ -29,3 +29,15 @@ main {
   background-size: 100% 2px;
   background-position: 0 100%;
 }
+
+.flex-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.flex-center {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}

@@ -18,6 +18,7 @@ export default function Home() {
       <section className="flex gap-2">
         <Link href="/sandbox/typography">Typography</Link>
         <Link href="/sandbox/links">Links</Link>
+        <Link href="/sandbox/button">Buttons</Link>
       </section>
     </main>
   );
