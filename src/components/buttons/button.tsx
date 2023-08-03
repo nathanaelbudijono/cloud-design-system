@@ -83,11 +83,11 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             ],
             variant === "outline" && [
               "border-typography-400 border-[1px] text-black ",
-              "hover:bg-blue-200 focus-visible:ring-primary-400 active:bg-typo-divider disabled:bg-typo-divider",
+              "hover:bg-blue-200  active:bg-typo-divider disabled:bg-typo-divider",
             ],
             variant === "ghost" && [
               "shadow-none",
-              "hover:bg-primary-50 focus-visible:ring-primary-400 active:bg-primary-100 disabled:bg-primary-100",
+              "hover:bg-primary-50  active:bg-primary-100 disabled:bg-primary-100",
             ],
           ],
           //#endregion  //*======== Variants ===========
