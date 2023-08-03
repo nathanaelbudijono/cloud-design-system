@@ -1,8 +1,10 @@
+import Seo from "@/components/core/seo";
 import Typography from "@/components/core/typography";
 
 export default function TypographyPage() {
   return (
     <main>
+      <Seo title="Typography" description="Typography" />
       <Typography variant="h1">Heading 1</Typography>
       <Typography variant="h2">Heading 2</Typography>
       <Typography variant="h3">Heading 3</Typography>
