@@ -15,7 +15,9 @@ export default function Home() {
       <Typography variant="h1">Cloud Design System</Typography>
       <Typography variant="p">
         Check out the{" "}
-        <ArrowLink href="https://github.com/budinathan">repository</ArrowLink>
+        <ArrowLink href="https://github.com/budinathan" target="_blank">
+          repository
+        </ArrowLink>
       </Typography>
       <section className="mt-2 grid grid-cols-3 gap-2">
         {cards.map((item) => (
