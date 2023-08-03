@@ -2,12 +2,13 @@ import Button from "@/components/buttons/button";
 import IconButton from "@/components/buttons/icon-button";
 import Seo from "@/components/core/seo";
 import Typography from "@/components/core/typography";
+import ButtonLink from "@/components/links/button-links";
 import { AiOutlineArrowRight, AiOutlinePlus, AiFillEye } from "react-icons/ai";
 export default function Buttons() {
   return (
     <main>
       <Seo title="Buttons" description="Buttons" />
-      <Typography variant="h2">Normal Buttons</Typography>
+      <Typography variant="h4">Normal Buttons</Typography>
       {/* start region, Normal Buttons */}
       <section className="flex-list">
         <div className="flex-center">
@@ -46,7 +47,7 @@ export default function Buttons() {
       </section>
       {/* end region, normal buttons */}
       {/* start region, icon buttons */}
-      <Typography variant="h2" className="mt-3">
+      <Typography variant="h4" className="mt-3">
         Icon Buttons
       </Typography>
       <section className="flex-list">
@@ -63,6 +64,29 @@ export default function Buttons() {
       </section>
       {/* end region, icon buttons
       start region, button links */}
+      <section className="flex-list">
+        <div className="flex-center">
+          <ButtonLink
+            variant="primary"
+            size="lg"
+            rightIcon={AiOutlineArrowRight}
+            href="/"
+          >
+            Primary Large
+          </ButtonLink>
+          <ButtonLink
+            variant="primary"
+            size="base"
+            leftIcon={AiOutlinePlus}
+            href="/"
+          >
+            Primary Base
+          </ButtonLink>
+          <ButtonLink variant="primary" size="sm" href="/">
+            Primary Small
+          </ButtonLink>
+        </div>
+      </section>
     </main>
   );
 }

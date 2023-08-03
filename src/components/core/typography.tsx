@@ -58,7 +58,7 @@ const Typography: TypographyComponent = React.forwardRef(
               "scroll-m-20 text-2xl font-semibold tracking-tight",
             ],
             variant === "h4" && [
-              "scroll-m-20 text-xl font-semibold tracking-tight",
+              "scroll-m-20 pb-2 text-xl font-semibold tracking-tight",
             ],
             variant === "p" && ["leading-7"],
             variant === "blockquote" && ["mt-6 border-l-2 pl-6 italic"],

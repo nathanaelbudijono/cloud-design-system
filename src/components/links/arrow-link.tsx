@@ -23,6 +23,7 @@ export default function ArrowLink<C extends React.ElementType>({
       {...rest}
       className={cn(
         "group gap-[0.25em]",
+        "hover:cursor-e-resize",
         direction === "left" && "flex-row-reverse",
         className
       )}

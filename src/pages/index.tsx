@@ -1,9 +1,11 @@
 import Seo from "@/components/core/seo";
 import Typography from "@/components/core/typography";
 import ArrowLink from "@/components/links/arrow-link";
-import Link from "next/link";
+import ButtonLink from "@/components/links/button-links";
+import sandbox from "@/constant/sandbox-link";
 
 export default function Home() {
+  const { cards } = sandbox;
   return (
     <main className="flex items-center justify-center flex-col">
       <Seo
@@ -15,10 +17,12 @@ export default function Home() {
         Check out the{" "}
         <ArrowLink href="https://github.com/budinathan">repository</ArrowLink>
       </Typography>
-      <section className="flex gap-2">
-        <Link href="/sandbox/typography">Typography</Link>
-        <Link href="/sandbox/links">Links</Link>
-        <Link href="/sandbox/button">Buttons</Link>
+      <section className="mt-2 grid grid-cols-3 gap-2">
+        {cards.map((item) => (
+          <ButtonLink variant="outline" size="base" href={item.link}>
+            {item.title}
+          </ButtonLink>
+        ))}
       </section>
     </main>
   );
