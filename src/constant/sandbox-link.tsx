@@ -17,7 +17,7 @@ const sandbox = {
       link: "/sandbox/tooltip",
     },
     {
-      title: "Frammer",
+      title: "Framer",
       link: "/sandbox/frammer",
     },
   ],
