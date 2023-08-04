@@ -1,9 +1,9 @@
 import { motion, AnimatePresence, useInView } from "framer-motion";
 import { ReactNode, useRef } from "react";
-interface FrammerProps {
+type FrammerProps = {
   children: ReactNode;
   delay?: number;
-}
+};
 
 export const Framer: React.FC<FrammerProps> = ({ children, delay = 0.3 }) => {
   const ref = useRef(null);
