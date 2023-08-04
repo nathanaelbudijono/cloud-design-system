@@ -14,13 +14,13 @@ export default function Home() {
         description="Design system used on projects"
       />
       <Typography variant="h2">Cloud Design System</Typography>
-      <Typography variant="p" color="muted">
+      <Typography variant="small" color="muted">
         Check out the{" "}
         <ArrowLink href="https://github.com/budinathan" target="_blank">
           repository
         </ArrowLink>
       </Typography>
-      <section className="mt-2 flex flex-wrap justify-center gap-2">
+      <section className="mt-5 flex flex-wrap justify-center gap-2">
         {cards.map((item, index) => (
           <Framer key={index} delay={index * 0.2}>
             <ButtonLink variant="outline" size="sm" href={item.link}>
