@@ -16,7 +16,9 @@ export default function TypographyPage() {
       <Typography variant="large">Base bold</Typography>
       <Typography variant="lead">Base lead</Typography>
       <Typography variant="small">Small</Typography>
-      <Typography variant="muted">Small muted</Typography>
+      <Typography variant="muted" color="muted">
+        Small muted
+      </Typography>
     </main>
   );
 }

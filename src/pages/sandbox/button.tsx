@@ -78,14 +78,14 @@ export default function Buttons() {
             Primary Large
           </ButtonLink>
           <ButtonLink
-            variant="primary"
+            variant="secondary"
             size="base"
             leftIcon={AiOutlinePlus}
             href="/"
           >
             Primary Base
           </ButtonLink>
-          <ButtonLink variant="primary" size="sm" href="/">
+          <ButtonLink variant="outline" size="sm" href="/">
             Primary Small
           </ButtonLink>
         </div>

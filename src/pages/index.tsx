@@ -14,7 +14,7 @@ export default function Home() {
         description="Design system used on projects"
       />
       <Typography variant="h2">Cloud Design System</Typography>
-      <Typography variant="p">
+      <Typography variant="p" color="muted">
         Check out the{" "}
         <ArrowLink href="https://github.com/budinathan" target="_blank">
           repository

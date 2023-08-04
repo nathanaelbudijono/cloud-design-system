@@ -17,12 +17,14 @@ export default function Tooltips() {
       <TooltipProvider delayDuration={300}>
         <Tooltip>
           <TooltipTrigger asChild>
-            <Button variant="secondary" size="base" rightIcon={SiNextdotjs}>
+            <Button variant="primary" size="base" rightIcon={SiNextdotjs}>
               Hover me!
             </Button>
           </TooltipTrigger>
           <TooltipContent side="right">
-            <Typography variant="p">This is NextJs</Typography>
+            <Typography variant="p" color="black">
+              This is NextJs
+            </Typography>
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>

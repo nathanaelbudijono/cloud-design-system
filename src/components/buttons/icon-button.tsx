@@ -59,15 +59,15 @@ const IconButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
           //#region  //*=========== Variants ===========
           [
             variant === "primary" && [
-              "bg-color-400 text-color-100",
-              "border border-color-400",
-              "hover:bg-color-500 ",
-              "disabled:border-danger-500",
-            ],
-            variant === "secondary" && [
               "bg-color-300 text-color-100",
               "border border-color-300",
-              "hover:bg-color-600 hover:text-color-100",
+              "hover:bg-color-600 hover:border-color-600",
+            ],
+            variant === "secondary" && [
+              "bg-color-400 text-color-100",
+              "border border-color-400",
+              "hover:bg-color-300 hover:border-color-300  ",
+              "disabled:border-danger-500",
             ],
 
             variant === "warning" && [
@@ -78,12 +78,12 @@ const IconButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
               "disabled:bg-amber-700",
             ],
             variant === "outline" && [
-              "border-typography-400 border-[1px] text-black ",
-              "hover:bg-blue-200  active:bg-typo-divider disabled:bg-typo-divider",
+              "border-color-100 border-[1px] text-color-100 ",
+              "hover:bg-blue-200 hover:text-typography-700 active:bg-typo-divider disabled:bg-typo-divider",
             ],
             variant === "ghost" && [
-              "shadow-none",
-              "hover:bg-primary-50  active:bg-primary-100 disabled:bg-primary-100",
+              "shadow-none text-color-100",
+              "hover:bg-color-200 hover:text-typography-800 active:bg-primary-100 disabled:bg-primary-100",
             ],
           ],
           //#endregion  //*======== Variants ===========

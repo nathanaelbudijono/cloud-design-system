@@ -1,7 +1,7 @@
 import Button from "@/components/buttons/button";
 import Modal from "@/components/core/modal";
 import Typography from "@/components/core/typography";
-import UnstyledLink from "@/components/links/unstyled-link";
+import ButtonLink from "@/components/links/button-links";
 import * as React from "react";
 
 type ModalReturnType = {
@@ -23,11 +23,11 @@ export default function ExampleModal({
       {children(modalReturn)}
       <Modal open={open} setOpen={setOpen} title="Modal Title">
         <Modal.Section>
-          <Typography variant="h4" className="text-start">
+          <Typography variant="h4" className="text-start" color="black">
             Modal Heading
           </Typography>
           <span className="h-[2px] bg-color-200 w-full"> </span>
-          <Typography variant="p" className="text-start">
+          <Typography variant="p" className="text-start" color="black">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
             ex cumque assumenda! Nesciunt reiciendis dolores sit atque incidunt
             debitis repudiandae.
@@ -36,15 +36,15 @@ export default function ExampleModal({
         <Modal.Section>
           <div className="flex justify-end gap-2">
             <Button
-              variant="outline"
+              variant="primary"
               size="base"
               onClick={() => setOpen(false)}
             >
               Close
             </Button>
-            <Button variant="primary" size="base">
-              <UnstyledLink href="/">Continue</UnstyledLink>
-            </Button>
+            <ButtonLink variant="primary" size="base" href="/">
+              Continue
+            </ButtonLink>
           </div>
         </Modal.Section>
       </Modal>

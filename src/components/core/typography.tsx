@@ -15,7 +15,13 @@ const TypographyVariant = [
   "muted",
 ] as const;
 
-const TypographyColor = ["default", "muted", "danger", "ready"] as const;
+const TypographyColor = [
+  "default",
+  "muted",
+  "danger",
+  "ready",
+  "black",
+] as const;
 
 type TypographyProps<T extends React.ElementType> = {
   as?: T;
@@ -36,7 +42,7 @@ const Typography: TypographyComponent = React.forwardRef(
       as,
       children,
       className,
-      color,
+      color = "default",
       variant = "p",
       ...rest
     }: TypographyProps<T>,
@@ -71,10 +77,9 @@ const Typography: TypographyComponent = React.forwardRef(
             variant === "muted" && ["text-sm text-typography-500"],
           ],
           [
-            color === "default" && [
-              "text-typography-900 dark:text-typography-50",
-            ],
-            color === "muted" && ["text-typography-500"],
+            color === "black" && ["text-typography-800"],
+            color === "default" && ["text-typography-100"],
+            color === "muted" && ["text-typography-200"],
             color === "danger" && ["text-danger-500"],
             color === "ready" && ["text-ready-500"],
           ],
