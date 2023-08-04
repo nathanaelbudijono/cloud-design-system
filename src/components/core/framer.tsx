@@ -8,7 +8,7 @@ export const Framer: React.FC<FrammerProps> = ({ children }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
-    <main ref={ref}>
+    <section ref={ref}>
       <AnimatePresence>
         <motion.div
           initial={{ opacity: 0, y: 100 }}
@@ -18,6 +18,6 @@ export const Framer: React.FC<FrammerProps> = ({ children }) => {
           {children}
         </motion.div>
       </AnimatePresence>
-    </main>
+    </section>
   );
 };
