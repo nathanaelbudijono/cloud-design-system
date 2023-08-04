@@ -1,4 +1,4 @@
-import cn from "@/lib/clsxm";
+import cn from "@/type/clsxm";
 import Link, { LinkProps } from "next/link";
 import * as React from "react";
 

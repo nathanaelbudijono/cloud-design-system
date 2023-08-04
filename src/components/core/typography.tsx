@@ -1,4 +1,4 @@
-import cn from "@/lib/clsxm";
+import cn from "@/type/clsxm";
 import * as React from "react";
 
 const TypographyVariant = [
