@@ -41,3 +41,12 @@ main {
   gap: 8px;
   align-items: center;
 }
+
+.bg-gradient {
+  background: rgb(93, 71, 206);
+  background: linear-gradient(
+    60deg,
+    rgba(93, 71, 206, 1) 0%,
+    rgba(153, 211, 243, 1) 100%
+  );
+}
