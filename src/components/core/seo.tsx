@@ -9,7 +9,7 @@ const defaultMeta = {
   url: "http://localhost:3000/",
   type: "website",
   robots: "follow, index",
-  image: "https://ibb.co/23wWxzy",
+  image: "https://ibb.co/519cJ12",
 };
 
 type SeoProps = {
