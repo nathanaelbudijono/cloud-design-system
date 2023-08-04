@@ -24,6 +24,10 @@ const sandbox = {
       title: "Modal",
       link: "/sandbox/modal",
     },
+    {
+      title: "Banner",
+      link: "/sandbox/banner",
+    },
   ],
 };
 
