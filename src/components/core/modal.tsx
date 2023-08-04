@@ -69,7 +69,7 @@ export function ModalRoot({
             <div
               className={cn(
                 "align inline-block transform rounded-lg bg-white  shadow-xl transition-all align-middle",
-                "w-[400px]",
+                "max-w-xl",
                 modalContainerClassName
               )}
             >

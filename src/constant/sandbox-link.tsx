@@ -20,6 +20,10 @@ const sandbox = {
       title: "Framer",
       link: "/sandbox/frammer",
     },
+    {
+      title: "Modal",
+      link: "/sandbox/modal",
+    },
   ],
 };
 
