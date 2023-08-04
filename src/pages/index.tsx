@@ -8,7 +8,7 @@ import sandbox from "@/constant/sandbox-link";
 export default function Home() {
   const { cards } = sandbox;
   return (
-    <main className="flex items-center justify-center flex-col text-center">
+    <main className="flex items-center justify-center flex-col text-center relative">
       <Seo
         title="Cloud Design System"
         description="Design system used on projects"
@@ -28,6 +28,11 @@ export default function Home() {
             </ButtonLink>
           </Framer>
         ))}
+      </section>
+      <section className="absolute bottom-16">
+        <Typography variant="small" color="muted" className="mt-5">
+          On progress...
+        </Typography>
       </section>
     </main>
   );
