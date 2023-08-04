@@ -3,7 +3,7 @@ import Typography from "@/components/core/typography";
 
 export default function Framers() {
   return (
-    <main>
+    <main className="max-sm:h-full">
       <Framer>
         <Typography variant="h4">Framer</Typography>
         <Typography variant="p">

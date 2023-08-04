@@ -17,7 +17,7 @@ function NextArrow({ onClick }: CustomArrowProps) {
       icon={FiChevronRight}
       variant="ghost"
       size="sm"
-      className="absolute top-1/2 right-0 z-10 flex -translate-x-16 -translate-y-1/2 items-center rounded-full"
+      className="absolute top-1/2 right-0 z-10 flex -translate-x-1/2 max-sm:translate-x-10 -translate-y-1/2 items-center rounded-full"
     />
   );
 }
@@ -29,7 +29,7 @@ function PrevArrow({ onClick }: CustomArrowProps) {
       icon={FiChevronLeft}
       variant="ghost"
       size="sm"
-      className="absolute top-1/2 left-0 z-10 flex translate-x-16 -translate-y-1/2 items-center rounded-full"
+      className="absolute top-1/2 left-0 z-10 flex translate-x-1/2 max-sm:-translate-x-10 -translate-y-1/2 items-center rounded-full"
     />
   );
 }
@@ -51,7 +51,7 @@ export default function Banner({ className, ...rest }: BannerProps) {
   return (
     <div
       className={cn(
-        "flex items-center bg-color-300 py-3",
+        "flex items-center bg-color-300 py-3 px-3",
         "min-h-[4rem] ",
         className
       )}
@@ -61,7 +61,7 @@ export default function Banner({ className, ...rest }: BannerProps) {
         <Slider {...settings}>
           {BannerContent.map((content, index) => (
             <div key={index} className="text-center">
-              <Typography variant="p">{content()}</Typography>
+              <Typography variant="small">{content()}</Typography>
             </div>
           ))}
         </Slider>

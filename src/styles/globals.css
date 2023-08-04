@@ -38,12 +38,6 @@ main {
   gap: 8px;
 }
 
-.flex-center {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-
 .bg-gradient {
   background: rgb(93, 71, 206);
   background: linear-gradient(
