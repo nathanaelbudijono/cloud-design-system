@@ -2,9 +2,10 @@ import { motion, AnimatePresence, useInView } from "framer-motion";
 import { ReactNode, useRef } from "react";
 interface FrammerProps {
   children: ReactNode;
+  delay?: number;
 }
 
-export const Framer: React.FC<FrammerProps> = ({ children }) => {
+export const Framer: React.FC<FrammerProps> = ({ children, delay = 0.3 }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
@@ -13,7 +14,7 @@ export const Framer: React.FC<FrammerProps> = ({ children }) => {
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 100 }}
-          transition={{ delay: 0.3, duration: 0.23 }}
+          transition={{ delay: delay, duration: 0.23 }}
         >
           {children}
         </motion.div>
