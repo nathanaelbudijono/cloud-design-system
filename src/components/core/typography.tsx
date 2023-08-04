@@ -35,7 +35,7 @@ type TypographyComponent = <T extends React.ElementType = "p">(
   props: TypographyProps<T>
 ) => React.ReactElement | null;
 
-// eslint-disable-next-line react/display-name
+// @ts-ignore
 const Typography: TypographyComponent = React.forwardRef(
   <T extends React.ElementType = "p">(
     {
