@@ -61,7 +61,7 @@ const ButtonLink = React.forwardRef<HTMLButtonElement, ButtonProps>(
             variant === "primary" && [
               "bg-d-500 text-color-100",
               "border border-d-600",
-              "hover:bg-d-700 hover:border-d-500",
+              "hover:bg-d-600 hover:border-d-500",
             ],
 
             variant === "warning" && [
