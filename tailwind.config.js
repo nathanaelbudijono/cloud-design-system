@@ -37,11 +37,6 @@ module.exports = {
         "danger-700": "#b91c1c",
 
         "color-100": "#F9F7F7",
-        "color-200": "#DBE2EF",
-        "color-300": "#3F72AF",
-        "color-400": "#18406E",
-        "color-500": "#112D4E",
-        "color-600": "#2C4E78",
 
         "d-100": "#FBD1D3",
         "d-200": "#F198AF",
