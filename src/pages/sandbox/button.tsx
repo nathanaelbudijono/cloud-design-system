@@ -37,6 +37,9 @@ export default function Buttons() {
           <Button variant="warning" size="lg" disabled>
             Warning Disabled
           </Button>
+          <Button variant="primary" size="lg" isLoading>
+            Warning Disabled
+          </Button>
         </div>
       </section>
       {/* end region, normal buttons */}
@@ -66,15 +69,15 @@ export default function Buttons() {
             Primary Large
           </ButtonLink>
           <ButtonLink
-            variant="secondary"
+            variant="warning"
             size="base"
             leftIcon={AiOutlinePlus}
             href="/"
           >
-            Primary Base
+            Warning Base
           </ButtonLink>
           <ButtonLink variant="outline" size="sm" href="/">
-            Primary Small
+            Outline Small
           </ButtonLink>
         </div>
       </section>
