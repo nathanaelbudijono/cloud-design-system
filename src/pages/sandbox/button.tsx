@@ -21,9 +21,7 @@ export default function Buttons() {
           <Button variant="primary" size="sm">
             Primary Small
           </Button>
-          <Button variant="secondary" size="lg">
-            Secondary Large
-          </Button>
+
           <Button variant="warning" size="base">
             Warning Base
           </Button>
@@ -47,7 +45,6 @@ export default function Buttons() {
       <section className="flex-list mb-5">
         <div className="grid grid-cols-6 gap-4 max-md:grid-cols-3 ">
           <IconButton icon={AiFillEye} variant="primary" size="lg" />
-          <IconButton icon={AiFillEye} variant="secondary" size="base" />
           <IconButton icon={AiFillEye} variant="outline" size="sm" />
 
           <IconButton icon={AiFillEye} variant="warning" size="lg" />
