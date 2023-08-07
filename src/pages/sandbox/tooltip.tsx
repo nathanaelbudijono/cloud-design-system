@@ -1,12 +1,11 @@
 import Button from "@/components/buttons/button";
-import IconButton from "@/components/buttons/icon-button";
 import Seo from "@/components/core/seo";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/core/tooptip";
+} from "@/components/core/tooltip";
 import Typography from "@/components/core/typography";
 import { SiNextdotjs } from "react-icons/si";
 export default function Tooltips() {
