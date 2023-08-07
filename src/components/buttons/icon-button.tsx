@@ -59,31 +59,25 @@ const IconButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
           //#region  //*=========== Variants ===========
           [
             variant === "primary" && [
-              "bg-color-300 text-color-100",
-              "border border-color-300",
-              "hover:bg-color-600 hover:border-color-600",
-            ],
-            variant === "secondary" && [
-              "bg-color-400 text-color-100",
-              "border border-color-400",
-              "hover:bg-color-300 hover:border-color-300  ",
-              "disabled:border-danger-500",
+              "bg-d-500 text-color-100",
+              "border border-d-600",
+              "hover:bg-d-700 hover:border-d-500",
             ],
 
             variant === "warning" && [
               "bg-amber-500 text-white",
               "border border-amber-500",
-              "hover:bg-amber-600 hover:text-white",
+              "hover:bg-amber-600 hover:text-color-100",
               "active:bg-amber-700",
-              "disabled:bg-amber-700",
+              "disabled:bg-amber-600",
             ],
             variant === "outline" && [
-              "border-color-100 border-[1px] text-color-100 ",
-              "hover:bg-blue-200 hover:text-typography-700 active:bg-typo-divider disabled:bg-typo-divider",
+              "bg-clip-padding backdrop-filter backdrop-blur-sm border border-d-400 text-color-100",
+              "hover:bg-d-400 hover:text-typography-800 active:bg-typo-divider disabled:bg-typo-divider",
             ],
             variant === "ghost" && [
               "shadow-none text-color-100",
-              "hover:bg-color-200 hover:text-typography-800 active:bg-primary-100 disabled:bg-primary-100",
+              "hover:bg-d-400 hover:text-typography-800 active:bg-primary-100 disabled:bg-primary-100",
             ],
           ],
           //#endregion  //*======== Variants ===========
