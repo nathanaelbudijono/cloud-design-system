@@ -28,6 +28,10 @@ const sandbox = {
       title: "Banner",
       link: "/sandbox/banner",
     },
+    {
+      title: "Info-Card",
+      link: "/sandbox/info-card",
+    },
   ],
 };
 

@@ -77,7 +77,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             variant === "warning" && [
               "bg-amber-500 text-white",
               "border border-amber-500",
-              "hover:bg-amber-600 hover:text-white",
+              "hover:bg-amber-600 hover:text-color-100",
               "active:bg-amber-700",
               "disabled:bg-amber-700",
             ],
