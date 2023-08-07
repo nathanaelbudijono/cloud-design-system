@@ -3,7 +3,7 @@ import Seo from "@/components/core/seo";
 import Typography from "@/components/core/typography";
 import ArrowLink from "@/components/links/arrow-link";
 import ButtonLink from "@/components/links/button-links";
-import UnstyledLink from "@/components/links/unstyled-link";
+import UnderlineLink from "@/components/links/underline-link";
 import sandbox from "@/constant/sandbox-link";
 
 export default function Home() {
@@ -30,17 +30,23 @@ export default function Home() {
           </Framer>
         ))}
       </section>
-      <section className="absolute bottom-16 flex">
+      <section className="absolute bottom-16 flex items-center gap-1">
         <Typography variant="small" color="muted">
           On progress, by{" "}
-          <UnstyledLink href="https://github.com/budinathan" target="_blank">
-            Nathan
-          </UnstyledLink>{" "}
-          and{" "}
-          <UnstyledLink href="https://github.com/steven2801" target="_blank">
-            Steven
-          </UnstyledLink>
         </Typography>
+        <UnderlineLink href="https://github.com/budinathan" target="_blank">
+          <Typography variant="small" color="muted">
+            Nathan
+          </Typography>
+        </UnderlineLink>
+        <Typography variant="small" color="muted">
+          and
+        </Typography>
+        <UnderlineLink href="https://github.com/steven2801" target="_blank">
+          <Typography variant="small" color="muted">
+            Steven
+          </Typography>
+        </UnderlineLink>
       </section>
     </main>
   );
