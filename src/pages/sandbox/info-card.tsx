@@ -17,13 +17,6 @@ export default function InfoCards() {
           icon={LiaTelegramPlane}
           label="Lorem Ipsum"
           desc="Consectus dominicus elit"
-          variant="secondary"
-          isLoading
-        />
-        <InfoCard
-          icon={LiaTelegramPlane}
-          label="Lorem Ipsum"
-          desc="Consectus dominicus elit"
           variant="warning"
         />
         <InfoCard
@@ -42,6 +35,12 @@ export default function InfoCards() {
           label="Lorem Ipsum"
           desc="Consectus dominicus elit"
           variant="outline"
+        />
+        <InfoCard
+          label="Lorem Ipsum"
+          desc="Consectus dominicus elit"
+          variant="primary"
+          isLoading
         />
       </section>
     </main>

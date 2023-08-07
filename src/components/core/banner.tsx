@@ -51,7 +51,7 @@ export default function Banner({ className, ...rest }: BannerProps) {
   return (
     <div
       className={cn(
-        "flex items-center bg-color-300 py-3 px-3",
+        "flex items-center bg-d-600 py-3 px-3",
         "min-h-[4rem] ",
         className
       )}

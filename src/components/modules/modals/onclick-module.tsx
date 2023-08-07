@@ -26,7 +26,7 @@ export default function ExampleModal({
           <Typography variant="h4" className="text-start" color="black">
             Modal Heading
           </Typography>
-          <span className="h-[2px] bg-color-200 w-full"> </span>
+          <span className="h-[2px] bg-d-100 w-full"> </span>
           <Typography variant="p" className="text-start" color="black">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
             ex cumque assumenda! Nesciunt reiciendis dolores sit atque incidunt
