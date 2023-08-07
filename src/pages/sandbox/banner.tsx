@@ -7,8 +7,8 @@ export default function Banners() {
     <main>
       <Seo title="Banner" description="banner" />
       <section className="fixed w-full left-0 text-center top-0 flex flex-col z-40">
-        <div className="py-2 bg-color-400 ">
-          <Typography variant="h1">A Navbar</Typography>
+        <div className="py-2 bg-d-700 ">
+          <Typography variant="h1">Navigation Bar</Typography>
         </div>
         <Banner />
       </section>
