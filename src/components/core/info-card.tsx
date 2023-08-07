@@ -53,7 +53,7 @@ export default function InfoCard({
       {Icon && (
         <div
           className={cn("p-2 bg-gray-200 rounded-lg", [
-            variant === "primary" && ["bg-color-600 text-color-100"],
+            variant === "primary" && ["bg-d-600 text-color-100"],
             variant === "warning" && ["bg-amber-600 text-color-100"],
             variant === "success" && ["bg-green-600 text-color-100"],
             variant === "outline" && ["text-typography-800"],
