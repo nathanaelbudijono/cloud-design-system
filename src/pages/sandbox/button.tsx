@@ -11,7 +11,7 @@ export default function Buttons() {
       <Typography variant="h4">Normal Buttons</Typography>
       {/* start region, Normal Buttons */}
       <section className="flex-list mb-5">
-        <div className="grid grid-cols-5 gap-4 max-md:grid-cols-3 max-sm:grid-cols-1">
+        <div className="grid grid-cols-4 gap-4 max-md:grid-cols-3 max-sm:grid-cols-1">
           <Button variant="primary" size="lg" rightIcon={AiOutlineArrowRight}>
             Primary Large
           </Button>
@@ -46,7 +46,7 @@ export default function Buttons() {
       {/* start region, icon buttons */}
       <Typography variant="h4">Icon Buttons</Typography>
       <section className="flex-list mb-5">
-        <div className="grid grid-cols-6 gap-4 max-md:grid-cols-3 ">
+        <div className="grid grid-cols-4 gap-4 max-md:grid-cols-3 ">
           <IconButton icon={AiFillEye} variant="primary" size="lg" />
           <IconButton icon={AiFillEye} variant="outline" size="sm" />
 
@@ -59,7 +59,7 @@ export default function Buttons() {
       start region, button links */}
       <Typography variant="h4">Button Links</Typography>
       <section className="flex-list ">
-        <div className="grid grid-cols-3 gap-4 max-sm:grid-cols-1">
+        <div className="grid grid-cols-4 gap-4 max-sm:grid-cols-1">
           <ButtonLink
             variant="primary"
             size="lg"
