@@ -48,7 +48,6 @@ const ButtonLink = React.forwardRef<HTMLButtonElement, ButtonProps>(
           "focus:outline-none focus-visible:ring",
           "shadow-sm",
           "transition-colors duration-100",
-          "active:bg-ready-400",
           //#region  //*=========== Size ===========
           [
             size === "lg" && ["px-3 py-2.5"],
