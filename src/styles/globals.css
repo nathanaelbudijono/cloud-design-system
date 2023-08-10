@@ -46,3 +46,7 @@ main {
     rgba(251, 209, 211, 1) 100%
   );
 }
+
+.ReactCollapse--collapse {
+  transition: height 350ms;
+}

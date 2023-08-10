@@ -32,6 +32,10 @@ const sandbox = {
       title: "Info-Card",
       link: "/sandbox/info-card",
     },
+    {
+      title: "Collapsible-Card",
+      link: "/sandbox/collapsible-card",
+    },
   ],
 };
 

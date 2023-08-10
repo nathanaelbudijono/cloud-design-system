@@ -1,4 +1,4 @@
-import InfoCard from "@/components/core/info-card";
+import InfoCard from "@/components/card/info-card";
 import Typography from "@/components/core/typography";
 import { LiaTelegramPlane } from "react-icons/lia";
 

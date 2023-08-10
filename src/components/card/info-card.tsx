@@ -1,8 +1,7 @@
 import cn from "@/type/clsxm";
 import * as React from "react";
 import { IconType } from "react-icons";
-import Typography from "./typography";
-import Skeleton from "./skeleton";
+import Skeleton from "../core/skeleton";
 
 const infoCardVariant = [
   "primary",
