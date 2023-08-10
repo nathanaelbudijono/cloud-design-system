@@ -44,6 +44,10 @@ const sandbox = {
       title: "Search Engine Optimization",
       link: "/sandbox/seo",
     },
+    {
+      title: "Form",
+      link: "/sandbox/form",
+    },
   ],
 };
 
