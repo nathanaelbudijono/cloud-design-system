@@ -40,6 +40,10 @@ const sandbox = {
       title: "Popover",
       link: "/sandbox/popover",
     },
+    {
+      title: "Search Engine Optimization",
+      link: "/sandbox/seo",
+    },
   ],
 };
 
