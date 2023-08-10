@@ -43,14 +43,14 @@ export default function CollapsibleCard({
       {...rest}
     >
       <div className="flex justify-between items-center">
-        <p className="text-lg  mb-2">{title}</p>
+        <p className="text-lg">{title}</p>
         <button onClick={toggle}>
           {open ? <AiOutlineMinus /> : <AiOutlinePlus />}
         </button>
       </div>
       <Collapse isOpened={open}>
         <div>
-          <p className="text-sm font-medium leading-none">{desc}</p>
+          <p className="text-sm font-medium leading-none mt-2">{desc}</p>
         </div>
       </Collapse>
     </div>
