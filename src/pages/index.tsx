@@ -17,7 +17,10 @@ export default function Home() {
       <Typography variant="h2">Cloud Design System</Typography>
       <Typography variant="small" color="muted">
         Check out the{" "}
-        <ArrowLink href="https://github.com/budinathan" target="_blank">
+        <ArrowLink
+          href="https://github.com/nathanaelbudijono/cloud-design-system"
+          target="_blank"
+        >
           repository
         </ArrowLink>
       </Typography>
@@ -34,7 +37,10 @@ export default function Home() {
         <Typography variant="small" color="muted">
           On progress, by{" "}
         </Typography>
-        <UnderlineLink href="https://github.com/budinathan" target="_blank">
+        <UnderlineLink
+          href="https://github.com/nathanaelbudijono"
+          target="_blank"
+        >
           <Typography variant="small" color="muted">
             Nathan
           </Typography>
