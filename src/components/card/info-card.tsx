@@ -3,13 +3,7 @@ import * as React from "react";
 import { IconType } from "react-icons";
 import Skeleton from "../core/skeleton";
 
-const infoCardVariant = [
-  "primary",
-  "secondary",
-  "warning",
-  "success",
-  "outline",
-] as const;
+const infoCardVariant = ["primary", "warning", "success", "outline"] as const;
 
 type InfoCardVariant = (typeof infoCardVariant)[number];
 
