@@ -24,7 +24,7 @@ export default function Home() {
           repository
         </ArrowLink>
       </Typography>
-      <section className="mt-5 flex flex-wrap justify-center gap-2">
+      <section className="mt-5 flex flex-wrap justify-center gap-2 max-w-5xl">
         {cards.map((item, index) => (
           <Framer key={index} delay={index * 0.2}>
             <ButtonLink variant="outline" size="sm" href={item.link}>
