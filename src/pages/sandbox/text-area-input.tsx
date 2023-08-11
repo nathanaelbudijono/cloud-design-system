@@ -4,7 +4,6 @@ import Typography from "@/components/core/typography";
 import Button from "@/components/buttons/button";
 import Seo from "@/components/core/seo";
 import TextAreaInput from "@/components/forms/text-area";
-import { AiOutlineUser } from "react-icons/ai";
 import { HiOutlineXCircle } from "react-icons/hi";
 import { LuPencil } from "react-icons/lu";
 
@@ -30,7 +29,7 @@ export default function TextAreaInputs() {
     clearErrors("input5");
   };
   return (
-    <section>
+    <section className="max-w-7xl mx-auto">
       <Seo
         title="Text Area TextAreaInput"
         description="Text Area TextAreaInput"
