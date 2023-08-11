@@ -39,7 +39,7 @@ export default function NormalInput() {
                 label="Username"
                 validation={{ required: "Name must be filled" }}
                 placeholder="Enter your username"
-                helperText="This is a helper text"
+                helperText="Must be a string!"
               />
               <Input
                 id="input2"
