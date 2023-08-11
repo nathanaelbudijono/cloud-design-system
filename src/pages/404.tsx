@@ -9,7 +9,7 @@ export default function NotFoundPage() {
       <Seo title="Not Found" />
       <Image src="/404.png" alt="404" className="sm:max-w-[400px]" />
       <Typography variant="h3" className="text-center">
-        Oops, looks like you're lost
+        Oops, looks like you're lost.
       </Typography>
       <ButtonLink href="/" variant="outline">
         Return
