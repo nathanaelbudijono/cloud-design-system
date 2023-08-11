@@ -37,38 +37,38 @@ export default function NormalInput() {
               <PasswordInput
                 id="input1"
                 label="Username"
-                validation={{ required: "Name must be filled" }}
-                placeholder="Enter your username"
-                helperText="This is a helper text"
+                validation={{ required: "Password must be filled" }}
+                placeholder="Enter your password"
+                helperText="Dont forget your password"
               />
               <PasswordInput
                 id="input2"
                 label="Username"
                 leftIconLabel={RiLockPasswordFill}
-                validation={{ required: "Name must be filled" }}
-                placeholder="Enter your username"
+                validation={{ required: "Password must be filled" }}
+                placeholder="Enter your password"
               />
               <PasswordInput
                 id="input3"
-                validation={{ required: "Name must be filled" }}
-                placeholder="Enter your username"
+                validation={{ required: "Password must be filled" }}
+                placeholder="Enter your password"
               />
               <PasswordInput
                 id="input4"
-                validation={{ required: "Name must be filled" }}
-                placeholder="Enter your username"
+                validation={{ required: "Password must be filled" }}
+                placeholder="Enter your password"
                 leftIcon={RiLockPasswordFill}
               />
               <PasswordInput
                 id="input5"
-                validation={{ required: "Name must be filled" }}
-                placeholder="Enter your username"
+                validation={{ required: "Password must be filled" }}
+                placeholder="Enter your password"
                 leftIcon={RiLockPasswordFill}
               />
               <PasswordInput
                 id="input5"
-                validation={{ required: "Name must be filled" }}
-                placeholder="Enter your username"
+                validation={{ required: "Password must be filled" }}
+                placeholder="Enter your password"
                 leftIcon={RiLockPasswordFill}
                 readOnly
               />
