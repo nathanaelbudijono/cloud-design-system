@@ -4,6 +4,7 @@ import * as React from "react";
 import { RegisterOptions, useFormContext } from "react-hook-form";
 import { IconType } from "react-icons";
 import Typography from "../core/typography";
+import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 
 export type InputProps = {
   label?: string | null;
@@ -16,7 +17,7 @@ export type InputProps = {
   validation?: RegisterOptions;
   leftIcon?: IconType | string;
   leftIconLabel?: IconType | string;
-  rightNode?: React.ReactNode;
+
   containerClassName?: string;
 } & React.ComponentPropsWithoutRef<"input">;
 
@@ -32,7 +33,7 @@ export default function PasswordInput({
   validation,
   leftIcon: LeftIcon,
   leftIconLabel: LeftIconLabel,
-  rightNode,
+
   containerClassName,
   ...rest
 }: InputProps) {
@@ -41,6 +42,8 @@ export default function PasswordInput({
     formState: { errors },
   } = useFormContext();
   const error = get(errors, id);
+  const [showPassword, setShowPassword] = React.useState(false);
+  const togglePassword = () => setShowPassword((prev) => !prev);
   return (
     <div className={containerClassName}>
       {label && (
@@ -57,7 +60,7 @@ export default function PasswordInput({
             {typeof LeftIcon === "string" ? (
               <Typography variant="p">{LeftIcon}</Typography>
             ) : (
-              <LeftIcon />
+              <LeftIcon className="text-d-600" />
             )}
           </div>
         )}
@@ -65,7 +68,7 @@ export default function PasswordInput({
         <input
           {...register(id, validation)}
           {...rest}
-          type={type}
+          type={showPassword ? "text" : "password"}
           name={id}
           id={id}
           readOnly={readOnly}
@@ -78,17 +81,21 @@ export default function PasswordInput({
             (readOnly || disabled) &&
               "cursor-not-allowed border-gray-300 bg-d-400 focus:border-gray-300 focus:ring-0",
             error && "border-red-500 focus:border-red-500 focus:ring-red-500",
-            LeftIcon && "pl-9",
-            rightNode && "pr-10"
+            LeftIcon && "pl-9"
           )}
           placeholder={placeholder}
           aria-describedby={id}
         />
-        {rightNode && (
-          <div className="absolute inset-y-0 right-0 flex items-center pr-3">
-            {rightNode}
-          </div>
-        )}
+
+        <div className="absolute inset-y-0 right-0 flex items-center pr-3 text-d-600">
+          <button type="button" onClick={togglePassword}>
+            {showPassword ? (
+              <AiFillEye className="cursor-pointer" />
+            ) : (
+              <AiFillEyeInvisible className="cursor-pointer" />
+            )}
+          </button>
+        </div>
       </div>
       {helperText && (
         <Typography variant="small" className="mt-2">
