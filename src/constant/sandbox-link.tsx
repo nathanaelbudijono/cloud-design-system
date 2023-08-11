@@ -52,6 +52,10 @@ const sandbox = {
       title: "Password Input",
       link: "/sandbox/password-input",
     },
+    {
+      title: "Text-Area Input",
+      link: "/sandbox/text-area-input",
+    },
   ],
 };
 
