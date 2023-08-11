@@ -20,7 +20,7 @@ export type InputProps = {
   containerClassName?: string;
 } & React.ComponentPropsWithoutRef<"input">;
 
-export default function Input({
+export default function PasswordInput({
   label,
   placeholder = " ",
   helperText,
@@ -85,7 +85,7 @@ export default function Input({
           aria-describedby={id}
         />
         {rightNode && (
-          <div className="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-300">
+          <div className="absolute inset-y-0 right-0 flex items-center pr-3">
             {rightNode}
           </div>
         )}
