@@ -43,7 +43,7 @@ export default function TextAreaInputs() {
                 id="input1"
                 label="Enter your description"
                 rows={10}
-                validation={{ required: "Name must be filled" }}
+                validation={{ required: "Description must be filled" }}
                 placeholder="Your description here"
                 helperText="Must be a string!"
               />
@@ -51,22 +51,22 @@ export default function TextAreaInputs() {
                 id="input2"
                 label="Enter your description"
                 leftIconLabel={LuPencil}
-                validation={{ required: "Name must be filled" }}
+                validation={{ required: "Description must be filled" }}
                 placeholder="Your description here"
               />
               <TextAreaInput
                 id="input3"
-                validation={{ required: "Name must be filled" }}
+                validation={{ required: "Description must be filled" }}
                 placeholder="Your description here"
               />
               <TextAreaInput
                 id="input4"
-                validation={{ required: "Name must be filled" }}
+                validation={{ required: "Description must be filled" }}
                 placeholder="Your description here"
               />
               <TextAreaInput
                 id="input5"
-                validation={{ required: "Name must be filled" }}
+                validation={{ required: "Description must be filled" }}
                 placeholder="Your description here"
                 rightNode={
                   <button type="button" className="p-1" onClick={handleClear}>
@@ -76,7 +76,7 @@ export default function TextAreaInputs() {
               />
               <TextAreaInput
                 id="input5"
-                validation={{ required: "Name must be filled" }}
+                validation={{ required: "Description must be filled" }}
                 placeholder="Your description here"
                 rightNode={
                   <button type="button" className="p-1" onClick={handleClear}>
