@@ -33,7 +33,7 @@ export default function Home() {
           </Framer>
         ))}
       </section>
-      <section className="absolute bottom-16 flex items-center gap-1">
+      <section className="absolute bottom-4 flex items-center gap-1">
         <Typography variant="small" color="muted">
           On progress, by{" "}
         </Typography>
