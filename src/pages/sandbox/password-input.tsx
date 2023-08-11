@@ -27,7 +27,7 @@ export default function NormalInput() {
   return (
     <main>
       <Seo title="Password Input" description="Password Input" />
-      <section className="w-1/3">
+      <section className="w-1/3 max-sm:w-full">
         <form onSubmit={handleSubmit(onSubmit)}>
           <FormProvider {...methods}>
             <Typography variant="h4">Password Input</Typography>
