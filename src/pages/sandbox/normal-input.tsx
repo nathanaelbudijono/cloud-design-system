@@ -14,7 +14,7 @@ type Inputs = {
   input5: string;
 };
 
-export default function Forms() {
+export default function NormalInput() {
   const methods = useForm<Inputs>({
     mode: "onTouched",
   });
@@ -69,6 +69,18 @@ export default function Forms() {
                     <HiOutlineXCircle className="text-xl text-typo-icons" />
                   </button>
                 }
+              />
+              <Input
+                id="input5"
+                validation={{ required: "Name must be filled" }}
+                placeholder="Enter your username"
+                leftIcon={AiOutlineUser}
+                rightNode={
+                  <button type="button" className="p-1" onClick={handleClear}>
+                    <HiOutlineXCircle className="text-xl text-typo-icons" />
+                  </button>
+                }
+                readOnly
               />
             </div>
 

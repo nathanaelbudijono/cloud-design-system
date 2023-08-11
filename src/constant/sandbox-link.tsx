@@ -48,6 +48,10 @@ const sandbox = {
       title: "Normal Input",
       link: "/sandbox/normal-input",
     },
+    {
+      title: "Password Input",
+      link: "/sandbox/password-input",
+    },
   ],
 };
 
