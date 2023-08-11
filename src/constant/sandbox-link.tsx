@@ -45,8 +45,8 @@ const sandbox = {
       link: "/sandbox/seo",
     },
     {
-      title: "Form",
-      link: "/sandbox/form",
+      title: "Normal Input",
+      link: "/sandbox/normal-input",
     },
   ],
 };
