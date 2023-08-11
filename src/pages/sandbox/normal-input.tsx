@@ -5,6 +5,7 @@ import Input from "@/components/forms/input";
 import Button from "@/components/buttons/button";
 import { AiOutlineUser } from "react-icons/ai";
 import { HiOutlineXCircle } from "react-icons/hi";
+import Seo from "@/components/core/seo";
 
 type Inputs = {
   input1: string;
@@ -29,6 +30,7 @@ export default function NormalInput() {
   };
   return (
     <main>
+      <Seo title="Normal Input" description="Normal Input" />
       <section className="w-1/3">
         <form onSubmit={handleSubmit(onSubmit)}>
           <FormProvider {...methods}>

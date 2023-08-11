@@ -5,6 +5,7 @@ import Button from "@/components/buttons/button";
 import { AiOutlineUser } from "react-icons/ai";
 import PasswordInput from "@/components/forms/password-input";
 import { RiLockPasswordFill } from "react-icons/ri";
+import Seo from "@/components/core/seo";
 
 type Inputs = {
   input1: string;
@@ -18,17 +19,14 @@ export default function NormalInput() {
   const methods = useForm<Inputs>({
     mode: "onTouched",
   });
-  const { handleSubmit, reset, clearErrors } = methods;
+  const { handleSubmit } = methods;
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     console.log(data);
     return;
   };
-  const handleClear = () => {
-    reset({ input5: "" });
-    clearErrors("input5");
-  };
   return (
     <main>
+      <Seo title="Password Input" description="Password Input" />
       <section className="w-1/3">
         <form onSubmit={handleSubmit(onSubmit)}>
           <FormProvider {...methods}>
