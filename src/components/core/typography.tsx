@@ -80,7 +80,7 @@ const Typography: TypographyComponent = React.forwardRef(
             color === "default" && ["text-color-100"],
             color === "black" && ["text-typography-800"],
             color === "muted" && ["text-typography-200"],
-            color === "danger" && ["text-danger-500"],
+            color === "danger" && ["text-d-200"],
             color === "ready" && ["text-ready-500"],
           ],
 
