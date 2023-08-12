@@ -17,7 +17,7 @@ export function openGraph({
     : undefined;
   const ogDesc = encodeURIComponent(description.trim());
 
-  return `https://localhost/api/general?siteName=${ogSiteName}&description=${ogDesc}&logo=${ogLogo}&theme=light${
+  return `https://cloud-design-system.vercel.app/api/general?siteName=${ogSiteName}&description=${ogDesc}&logo=${ogLogo}&theme=light${
     ogTemplateTitle ? `&templateTitle=${ogTemplateTitle}` : ""
   }`;
 }
