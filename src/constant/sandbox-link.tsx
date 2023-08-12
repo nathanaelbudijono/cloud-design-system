@@ -60,6 +60,14 @@ const sandbox = {
       title: "Date Picker",
       link: "/sandbox/date-picker",
     },
+    {
+      title: "Radio Button",
+      link: "/sandbox/radio-button",
+    },
+    {
+      title: "Checkbox",
+      link: "/sandbox/checkbox",
+    },
   ],
 };
 
