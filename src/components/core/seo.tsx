@@ -6,7 +6,7 @@ const defaultMeta = {
   title: "Cloud Design System",
   siteName: "Cloud Design System",
   description: "Design system used on projects",
-  url: "http://localhost:3000/",
+  url: "https://cloud-design-system.vercel.app/",
   type: "website",
   robots: "follow, index",
   image: "https://ibb.co/yFWZHfc",
