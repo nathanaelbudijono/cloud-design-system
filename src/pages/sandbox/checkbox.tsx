@@ -20,7 +20,7 @@ export default function Checkboxs() {
   };
   return (
     <main>
-      <Seo title="Radio Button" description="Radio button" />
+      <Seo title="Checkbox" description="Checkbox" />
       <Typography variant="h4">Checkbox</Typography>
       <form onSubmit={handleSubmit(onSubmit)}>
         <FormProvider {...methods}>
