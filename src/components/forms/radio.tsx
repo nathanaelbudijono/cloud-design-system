@@ -46,9 +46,8 @@ export default function Radio({
             "",
             "shrink-0 cursor-pointer",
             "focus:outline-none focus:ring-0 focus:ring-offset-0",
-            "checked:bg-primary-500 checked:hover:bg-primary-600 checked:focus:bg-primary-500 checked:active:bg-primary-700",
             (readOnly || disabled) &&
-              "cursor-not-allowed bg-gray-100 disabled:checked:bg-primary-400",
+              "cursor-not-allowed bg-gray-100 disabled:checked:bg-d-200",
             error && "border-danger-400 bg-danger-100"
           )}
           placeholder={placeholder}
