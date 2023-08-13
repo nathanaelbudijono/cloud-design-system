@@ -68,6 +68,10 @@ const sandbox = {
       title: "Checkbox",
       link: "/sandbox/checkbox",
     },
+    {
+      title: "Dropzone",
+      link: "/sandbox/dropzone",
+    },
   ],
 };
 
