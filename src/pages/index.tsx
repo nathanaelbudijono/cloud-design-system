@@ -6,10 +6,18 @@ import ButtonLink from "@/components/links/button-links";
 import UnderlineLink from "@/components/links/underline-link";
 import sandbox from "@/constant/sandbox-link";
 import { useTheme } from "next-themes";
+import { useState, useEffect } from "react";
 
 export default function Home() {
-  const { setTheme } = useTheme();
+  const { setTheme, theme } = useTheme();
+  const [mounted, setMounted] = useState<boolean>(false);
   const { cards } = sandbox;
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+  if (!mounted) {
+    return null;
+  }
   return (
     <main className="flex items-center justify-center flex-col text-center relative">
       <Seo
@@ -17,8 +25,11 @@ export default function Home() {
         description="Design system used on projects"
       />
       <Typography variant="h2">Cloud Design System</Typography>
-      <button onClick={() => setTheme("dark")}>Dark</button>
-      <button onClick={() => setTheme("light")}>light</button>
+      <div className="flex gap-2 mb-2">
+        <button onClick={() => setTheme("dark")}>Dark</button>
+        <button onClick={() => setTheme("light")}>light</button>
+        <p> | {theme}</p>
+      </div>
       <Typography variant="small" color="muted">
         Check out the{" "}
         <ArrowLink
@@ -30,7 +41,7 @@ export default function Home() {
       </Typography>
       <section className="mt-5 flex flex-wrap justify-center gap-2 max-w-5xl">
         {cards.map((item, index) => (
-          <Framer key={index} delay={index * 0}>
+          <Framer key={index} delay={index * 0.15}>
             <ButtonLink variant="outline" size="sm" href={item.link}>
               {item.title}
             </ButtonLink>
