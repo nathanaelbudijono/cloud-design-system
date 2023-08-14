@@ -61,7 +61,6 @@ export default function Input({
             )}
           </div>
         )}
-
         <input
           {...register(id, validation)}
           {...rest}

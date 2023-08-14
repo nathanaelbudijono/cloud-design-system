@@ -21,7 +21,7 @@ export default function DatePickers() {
   };
   return (
     <main>
-      <Seo title="Normal Input" description="Normal Input" />
+      <Seo title="Date picker" description="Date picker" />
       <section className="w-1/3 max-sm:w-full">
         <form onSubmit={handleSubmit(onSubmit)}>
           <FormProvider {...methods}>
@@ -54,7 +54,8 @@ export default function DatePickers() {
                 }}
                 placeholder="dd/mm/yyyy"
                 leftIcon={HiOutlineCalendar}
-                disabled
+                readOnly
+                value="01/12/23"
               />
             </div>
 

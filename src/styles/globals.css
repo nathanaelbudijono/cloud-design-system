@@ -50,3 +50,8 @@ main {
 .ReactCollapse--collapse {
   transition: height 350ms;
 }
+
+.react-datepicker-wrapper {
+  display: block;
+  width: 100%;
+}

@@ -49,7 +49,7 @@ export default function DatePicker({
   if (defaultYear) defaultDate.setFullYear(defaultYear);
   if (defaultMonth) defaultDate.setMonth(defaultMonth);
   return (
-    <div className={cn("relative", containerClassName)}>
+    <div className={cn(containerClassName)}>
       {label && (
         <div className="bg-d-600 flex w-fit px-3 py-1 border border-d-600 rounded-t-lg gap-2 items-center">
           {LeftIconLabel && <LeftIconLabel className="text-color-100" />}
@@ -64,29 +64,30 @@ export default function DatePicker({
         defaultValue={defaultValue}
         name={id}
         render={({ field: { onChange, onBlur, value } }) => (
-          <>
+          <div>
             <div className={clsx("relative")}>
               {LeftIcon && (
                 <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3 z-10">
                   {LeftIcon && <LeftIcon className="text-d-600" />}
                 </div>
               )}
+
               <ReactDatePicker
                 name={id}
                 onChange={onChange}
                 onBlur={onBlur}
                 selected={value ? new Date(value) : undefined}
                 className={clsx(
-                  "flex w-full shadow-sm",
+                  "flex shadow-sm w-full",
                   label
-                    ? "rounded-tr-lg rounded-bl-lg rounded-br-lg"
+                    ? "rounded-tr-lg rounded-bl-lg rounded-br-lg "
                     : "rounded-lg",
                   "p-2",
-                  "border-gray-300 ",
+                  "border-gray-300",
                   LeftIcon && "pl-9",
                   (readOnly || disabled) &&
                     "cursor-not-allowed border-gray-300 bg-gray-100",
-                  error && "border-red-500 "
+                  error && "border-red-500"
                 )}
                 placeholderText={placeholder}
                 aria-describedby={id}
@@ -100,17 +101,18 @@ export default function DatePicker({
                 {...rest}
               />
             </div>
+
             {helperText && (
-              <Typography variant="p" className="mt-1">
+              <Typography variant="small" className="mt-1">
                 {helperText}
               </Typography>
             )}
             {!hideError && error && (
-              <Typography variant="p" color="danger" className="mt-1">
+              <Typography variant="small" color="danger" className="mt-1">
                 {error?.message?.toString()}
               </Typography>
             )}
-          </>
+          </div>
         )}
       />
     </div>
