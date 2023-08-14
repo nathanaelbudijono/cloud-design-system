@@ -33,7 +33,7 @@ export default function Home() {
           </Framer>
         ))}
       </section>
-      <section className="absolute bottom-4 flex items-center gap-1">
+      <footer className="absolute bottom-2 flex items-center gap-1">
         <Typography variant="small" color="muted">
           On progress, by{" "}
         </Typography>
@@ -53,7 +53,7 @@ export default function Home() {
             Steven
           </Typography>
         </UnderlineLink>
-      </section>
+      </footer>
     </main>
   );
 }
