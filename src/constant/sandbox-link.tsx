@@ -77,10 +77,6 @@ const sandbox = {
       link: "/sandbox/breadcrumbs",
     },
     {
-      title: "Image Preview",
-      link: "/sandbox/image-preview",
-    },
-    {
       title: "Toast & Query",
       link: "/sandbox/toast-query",
     },
