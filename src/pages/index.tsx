@@ -28,11 +28,12 @@ export default function Home() {
         title="Cloud Design System"
         description="Design system used on projects"
       />
-      <Typography variant="h2">Cloud Design System</Typography>
+
       <div className="flex gap-2 mb-2">
+        <Typography variant="h2">Cloud Design System</Typography>
         <button
           onClick={toggleTheme}
-          className="bg-d-600 p-1 rounded-lg text-color-100 dark:bg-n-200 hover:bg-d-500 dark:hover:bg-n-300 transition-all duration-200 ease-out"
+          className="bg-d-600 h-fit w-fit p-1 rounded-lg text-color-100 dark:bg-n-200 hover:bg-d-500 dark:hover:bg-n-300 transition-all duration-200 ease-out"
         >
           {theme === "dark" ? <CiDark /> : <CiSun />}
         </button>
@@ -57,7 +58,7 @@ export default function Home() {
       </section>
       <footer className="absolute bottom-2 flex items-center gap-1">
         <Typography variant="small" color="muted">
-          On progress, by{" "}
+          © {new Date().getFullYear()} By{" "}
         </Typography>
         <UnderlineLink
           href="https://github.com/nathanaelbudijono"
