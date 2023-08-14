@@ -7,6 +7,7 @@ import FilePreview from "./file-preview";
 import { FileWithPreview } from "@/type/dropzone";
 import { PiUploadSimpleLight } from "react-icons/pi";
 import Typography from "../core/typography";
+import { IconType } from "react-icons";
 
 type DropzoneInputProps = {
   accept?: Accept;
@@ -16,6 +17,7 @@ type DropzoneInputProps = {
   maxFiles?: number;
   readOnly?: boolean;
   validation?: object;
+  leftIconLabel?: IconType | string;
   type?: "image" | "file";
 };
 
@@ -26,6 +28,7 @@ export default function DropzoneInput({
   label,
   maxFiles = 2,
   validation,
+  leftIconLabel: LeftIconLabel,
   readOnly,
 }: DropzoneInputProps) {
   const {
@@ -120,7 +123,14 @@ export default function DropzoneInput({
 
   return (
     <div>
-      <Typography variant="p">{label}</Typography>
+      {label && (
+        <div className="bg-d-600 flex w-fit px-3 py-1 border border-d-600 rounded-t-lg gap-2 items-center">
+          {LeftIconLabel && <LeftIconLabel className="text-color-100" />}
+          <Typography as="label" variant="p" className="block" htmlFor={id}>
+            {label}
+          </Typography>
+        </div>
+      )}
       {readOnly && !(files?.length > 0) ? (
         <div className="rounded-md border cursor-not-allowed border-d-400 text-color-100 py-3 pl-3 pr-4 text-sm">
           Cannot upload files
@@ -147,14 +157,17 @@ export default function DropzoneInput({
           render={({ field }) => (
             <>
               <div
-                className="focus:ring-dark-400 group mt-1 focus:outline-none"
+                className="group  focus:outline-none"
                 {...getRootProps()}
                 {...field}
               >
                 <input {...getInputProps()} />
                 <div
                   className={clsx(
-                    "w-full p-2 bg-transparent border border-d-400 shadow-md hover:bg-d-400 transition-colors duration-100 hover:text-typography-800 text-color-100 rounded-md cursor-pointer",
+                    "w-full p-2 bg-transparent border border-d-400 shadow-sm hover:bg-d-400 transition-colors duration-100 hover:text-typography-800 text-color-100 cursor-pointer",
+                    label
+                      ? "rounded-tr-lg rounded-bl-lg rounded-br-lg"
+                      : "rounded-lg",
                     errors[id]
                       ? "border-danger-500 group-focus:border-danger-500"
                       : "group-focus:border-primary-500"
