@@ -64,7 +64,7 @@ export default function Radio({
         </Typography>
 
         {!hideError && error && (
-          <Typography variant="small" color="danger" className="mt-1">
+          <Typography variant="small" color="danger" className="mt-2">
             {error?.message?.toString()}
           </Typography>
         )}
