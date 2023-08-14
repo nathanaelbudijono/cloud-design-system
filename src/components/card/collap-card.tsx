@@ -1,6 +1,5 @@
 import cn from "@/type/clsxm";
 import * as React from "react";
-import Typography from "../core/typography";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import { Collapse } from "react-collapse";
 
