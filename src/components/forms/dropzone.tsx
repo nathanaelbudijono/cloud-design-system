@@ -154,7 +154,7 @@ export default function DropzoneInput({
                 <input {...getInputProps()} />
                 <div
                   className={clsx(
-                    "w-full p-2 bg-transparent border border-d-400 shadow-md hover:bg-d-400 transition-colors duration-200 hover:text-typography-800 text-color-100 rounded-md cursor-pointer",
+                    "w-full p-2 bg-transparent border border-d-400 shadow-md hover:bg-d-400 transition-colors duration-100 hover:text-typography-800 text-color-100 rounded-md cursor-pointer",
                     errors[id]
                       ? "border-danger-500 group-focus:border-danger-500"
                       : "group-focus:border-primary-500"
