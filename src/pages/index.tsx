@@ -7,10 +7,14 @@ import UnderlineLink from "@/components/links/underline-link";
 import sandbox from "@/constant/sandbox-link";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
+import { CiDark, CiSun } from "react-icons/ci";
 
 export default function Home() {
   const { setTheme, theme } = useTheme();
   const [mounted, setMounted] = useState<boolean>(false);
+  const toggleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
   const { cards } = sandbox;
   useEffect(() => {
     setMounted(true);
@@ -26,9 +30,12 @@ export default function Home() {
       />
       <Typography variant="h2">Cloud Design System</Typography>
       <div className="flex gap-2 mb-2">
-        <button onClick={() => setTheme("dark")}>Dark</button>
-        <button onClick={() => setTheme("light")}>light</button>
-        <p> | {theme}</p>
+        <button
+          onClick={toggleTheme}
+          className="bg-d-600 p-1 rounded-lg text-color-100 dark:bg-n-200 hover:bg-d-500 dark:hover:bg-n-300 transition-all duration-200 ease-out"
+        >
+          {theme === "dark" ? <CiDark /> : <CiSun />}
+        </button>
       </div>
       <Typography variant="small" color="muted">
         Check out the{" "}
