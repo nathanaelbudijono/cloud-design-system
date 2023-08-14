@@ -32,12 +32,13 @@ export default function InfoCard({
         "flex items-center gap-3  text-color-100",
         "transition-colors duration-100",
         [
-          variant === "primary" && ["bg-d-500"],
+          variant === "primary" && ["bg-d-500 dark:bg-n-200"],
           variant === "warning" && ["bg-amber-500"],
           variant === "success" && ["bg-green-500"],
           variant === "outline" && [
             "bg-clip-padding backdrop-filter backdrop-blur-sm border border-d-400 text-color-100",
             "hover:bg-d-400 hover:text-typography-800 active:bg-typo-divider disabled:bg-typo-divider",
+            "dark:hover:bg-n-400 dark:border-n-500",
           ],
         ]
       )}
@@ -46,10 +47,12 @@ export default function InfoCard({
       {Icon && (
         <div
           className={cn("p-2 bg-gray-200 rounded-lg", [
-            variant === "primary" && ["bg-d-600 text-color-100"],
+            variant === "primary" && ["bg-d-600 text-color-100 dark:bg-n-300"],
             variant === "warning" && ["bg-amber-600 text-color-100"],
             variant === "success" && ["bg-green-600 text-color-100"],
-            variant === "outline" && ["text-typography-800"],
+            variant === "outline" && [
+              "text-typography-800 dark:bg-n-500 dark:text-color-100",
+            ],
           ])}
         >
           <Icon size={24} />

@@ -37,7 +37,7 @@ export default function FilePreview({
   return imagesType.includes(file.type) ? (
     <>
       <li
-        className="flex min-h-[2.25rem] mb-2 rounded-md border shadow-md text-color-100 hover:bg-d-400 transition-color duration-100 hover:text-typography-800 border-d-400 items-center justify-between py-0 pl-3 pr-4 text-sm "
+        className="flex min-h-[2.25rem] mb-2 rounded-md border shadow-md text-color-100 hover:bg-d-400 transition-color duration-100 hover:text-typography-800 border-d-400 items-center justify-between py-0 pl-3 pr-4 text-sm  dark:hover:bg-n-400 dark:border-n-500"
         key={file.name}
       >
         <div className="flex w-0 flex-1 items-center">
@@ -49,7 +49,7 @@ export default function FilePreview({
             <button
               type="button"
               onClick={handleDelete}
-              className="rounded text-xl font-medium text-d-200 hover:text-red-700 focus:outline-none focus:ring focus:ring-red-500"
+              className="rounded text-xl font-medium text-d-200 hover:text-red-700 focus:outline-none focus:ring focus:ring-red-500 dark:text-color-100 hover:dark:text-red-600"
             >
               <HiX />
             </button>
@@ -78,7 +78,7 @@ export default function FilePreview({
         </a>
         {!readOnly && (
           <button
-            className="cursor-pointer rounded text-red-200 hover:text-red-400 focus:outline-none focus:ring focus:ring-red-500"
+            className="cursor-pointer rounded text-red-200 hover:text-red-400 focus:outline-none focus:ring focus:ring-red-500 "
             type="button"
             onClick={(e) => deleteFile?.(e, file)}
           >

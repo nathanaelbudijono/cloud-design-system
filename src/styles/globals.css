@@ -38,15 +38,6 @@ main {
   gap: 8px;
 }
 
-.bg-gradient {
-  background: rgb(251, 209, 211);
-  background: linear-gradient(
-    70deg,
-    rgba(118, 109, 193, 1) 0%,
-    rgba(251, 209, 211, 1) 100%
-  );
-}
-
 .ReactCollapse--collapse {
   transition: height 350ms;
 }

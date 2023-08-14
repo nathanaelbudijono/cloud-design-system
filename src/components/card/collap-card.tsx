@@ -31,11 +31,13 @@ export default function CollapsibleCard({
           variant === "primary" && [
             "bg-d-500 text-color-100",
             "border border-d-600",
+            "dark:bg-n-200 border-n-300",
             "hover:bg-d-600 hover:border-d-500",
           ],
           variant === "outline" && [
             "bg-clip-padding backdrop-filter backdrop-blur-sm border border-d-400 text-color-100",
-            "hover:bg-d-400 hover:text-typography-800",
+            "hover:bg-d-400 hover:text-typography-800 active:bg-typo-divider disabled:bg-typo-divider",
+            "dark:hover:bg-n-400 dark:border-n-500",
           ],
         ]
       )}

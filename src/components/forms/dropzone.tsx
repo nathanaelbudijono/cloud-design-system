@@ -124,7 +124,7 @@ export default function DropzoneInput({
   return (
     <div>
       {label && (
-        <div className="bg-d-600 flex w-fit px-3 py-1 border border-d-600 rounded-t-lg gap-2 items-center">
+        <div className="bg-d-600 flex w-fit px-3 py-1 border border-d-600 rounded-t-lg gap-2 items-center dark:bg-n-300 dark:border-n-200">
           {LeftIconLabel && <LeftIconLabel className="text-color-100" />}
           <Typography as="label" variant="p" className="block" htmlFor={id}>
             {label}
@@ -164,7 +164,7 @@ export default function DropzoneInput({
                 <input {...getInputProps()} />
                 <div
                   className={clsx(
-                    "w-full p-2 bg-transparent border border-d-400 shadow-sm hover:bg-d-400 transition-colors duration-100 hover:text-typography-800 text-color-100 cursor-pointer",
+                    "w-full p-2 bg-transparent border border-d-400 shadow-sm hover:bg-d-400 transition-colors duration-100 hover:text-typography-800 text-color-100 cursor-pointer dark:hover:bg-n-400 dark:border-n-500",
                     label
                       ? "rounded-tr-lg rounded-bl-lg rounded-br-lg"
                       : "rounded-lg",

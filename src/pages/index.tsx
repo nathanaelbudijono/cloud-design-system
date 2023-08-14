@@ -5,8 +5,10 @@ import ArrowLink from "@/components/links/arrow-link";
 import ButtonLink from "@/components/links/button-links";
 import UnderlineLink from "@/components/links/underline-link";
 import sandbox from "@/constant/sandbox-link";
+import { useTheme } from "next-themes";
 
 export default function Home() {
+  const { setTheme } = useTheme();
   const { cards } = sandbox;
   return (
     <main className="flex items-center justify-center flex-col text-center relative">
@@ -15,6 +17,8 @@ export default function Home() {
         description="Design system used on projects"
       />
       <Typography variant="h2">Cloud Design System</Typography>
+      <button onClick={() => setTheme("dark")}>Dark</button>
+      <button onClick={() => setTheme("light")}>light</button>
       <Typography variant="small" color="muted">
         Check out the{" "}
         <ArrowLink
@@ -26,7 +30,7 @@ export default function Home() {
       </Typography>
       <section className="mt-5 flex flex-wrap justify-center gap-2 max-w-5xl">
         {cards.map((item, index) => (
-          <Framer key={index} delay={index * 0.15}>
+          <Framer key={index} delay={index * 0}>
             <ButtonLink variant="outline" size="sm" href={item.link}>
               {item.title}
             </ButtonLink>

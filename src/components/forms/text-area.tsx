@@ -42,8 +42,8 @@ export default function TextAreaInput({
   return (
     <div className={containerClassName}>
       {label && (
-        <div className="bg-d-600 flex w-fit px-3 py-1 border border-d-600 rounded-t-lg gap-2 items-center">
-          {LeftIconLabel && <LeftIconLabel className="text-color-100" />}
+        <div className="bg-d-600 flex w-fit px-3 py-1 border border-d-600 rounded-t-lg gap-2 items-center dark:bg-n-300 dark:border-n-200">
+          {LeftIconLabel && <LeftIconLabel className="text-color-100 " />}
           <Typography as="label" variant="p" className="block" htmlFor={id}>
             {label}
           </Typography>
@@ -59,12 +59,12 @@ export default function TextAreaInput({
           readOnly={readOnly}
           disabled={disabled}
           className={clsx(
-            "flex w-full  shadow-sm",
+            "flex w-full  shadow-sm dark:bg-slate-700",
             label ? "rounded-tr-lg rounded-bl-lg rounded-br-lg" : "rounded-lg",
             "py-2 px-2",
             "border-gray-300",
             (readOnly || disabled) &&
-              "cursor-not-allowed border-gray-300 bg-d-400 focus:border-gray-300 focus:ring-0",
+              "cursor-not-allowed border-gray-300 disabled:bg-gray-400 focus:border-gray-300 focus:ring-0 ",
             error && "border-red-500 focus:border-red-500 focus:ring-red-500",
             rightNode && "pr-10"
           )}
@@ -72,7 +72,7 @@ export default function TextAreaInput({
           aria-describedby={id}
         />
         {rightNode && (
-          <div className="absolute top-0 right-0  flex items-center pr-3 text-d-600">
+          <div className="absolute top-0 right-0 dark:text-color-100 flex items-center pr-3 text-d-600">
             {rightNode}
           </div>
         )}

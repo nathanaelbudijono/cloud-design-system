@@ -58,7 +58,7 @@ const Typography: TypographyComponent = React.forwardRef(
               "scroll-m-20 text-4xl font-bold tracking-tight",
             ],
             variant === "h2" && [
-              "scroll-m-20 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0",
+              "scroll-m-20 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 ",
             ],
             variant === "h3" && [
               "scroll-m-20 text-2xl font-semibold tracking-tight",

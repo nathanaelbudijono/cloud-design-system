@@ -8,7 +8,7 @@ export default function Banners() {
     <main>
       <Seo title="Banner" description="banner" />
       <section className="fixed w-full left-0 text-center top-0 flex flex-col z-40">
-        <div className="py-4 bg-d-700 flex justify-between px-10 items-center">
+        <div className="py-4 bg-d-700 dark:bg-n-200 flex justify-between px-10 items-center">
           <Typography variant="large">Cloud DS</Typography>
           <UnstyledLink href="/" className="text-color-100">
             Home

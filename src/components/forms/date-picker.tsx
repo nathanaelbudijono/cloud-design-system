@@ -51,7 +51,7 @@ export default function DatePicker({
   return (
     <div className={cn(containerClassName)}>
       {label && (
-        <div className="bg-d-600 flex w-fit px-3 py-1 border border-d-600 rounded-t-lg gap-2 items-center">
+        <div className="bg-d-600 flex w-fit px-3 py-1 border border-d-600 rounded-t-lg gap-2 items-center dark:bg-n-300 dark:border-n-200">
           {LeftIconLabel && <LeftIconLabel className="text-color-100" />}
           <Typography as="label" variant="p" className="block" htmlFor={id}>
             {label}
@@ -78,7 +78,7 @@ export default function DatePicker({
                 onBlur={onBlur}
                 selected={value ? new Date(value) : undefined}
                 className={clsx(
-                  "flex shadow-sm w-full",
+                  "flex shadow-sm w-full dark:bg-slate-700",
                   label
                     ? "rounded-tr-lg rounded-bl-lg rounded-br-lg "
                     : "rounded-lg",
