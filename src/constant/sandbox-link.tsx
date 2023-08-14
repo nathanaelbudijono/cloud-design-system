@@ -72,6 +72,10 @@ const sandbox = {
       title: "Dropzone",
       link: "/sandbox/dropzone",
     },
+    {
+      title: "Breadcrumbs",
+      link: "/sandbox/breadcrumbs",
+    },
   ],
 };
 
