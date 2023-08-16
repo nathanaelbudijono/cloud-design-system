@@ -33,7 +33,7 @@ export default function Home() {
         <Typography variant="h2">Cloud Design System</Typography>
         <button
           onClick={toggleTheme}
-          className="bg-d-600 h-fit w-fit p-1 rounded-lg text-color-100 dark:bg-n-200 hover:bg-d-500 dark:hover:bg-n-300 transition-all duration-500 ease-in"
+          className="h-fit w-fit p-1 rounded-lg text-color-100 hover:bg-d-500 dark:hover:bg-n-300 transition-all duration-500 ease-in"
         >
           {theme === "dark" ? <CiDark /> : <CiSun />}
         </button>
