@@ -61,7 +61,7 @@ export default function Home() {
           © {new Date().getFullYear()} By{" "}
         </Typography>
         <UnderlineLink
-          href="https://github.com/nathanaelbudijono"
+          href="https://nathanaelbudijono.vercel.app"
           target="_blank"
         >
           <Typography variant="small" color="muted">
@@ -71,7 +71,7 @@ export default function Home() {
         <Typography variant="small" color="muted">
           and
         </Typography>
-        <UnderlineLink href="https://github.com/steven2801" target="_blank">
+        <UnderlineLink href="https://steven2801.vercel.app" target="_blank">
           <Typography variant="small" color="muted">
             Steven
           </Typography>
