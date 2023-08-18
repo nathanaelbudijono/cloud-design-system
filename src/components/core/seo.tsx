@@ -1,4 +1,4 @@
-import { openGraph } from "@/lib/open-graph";
+// import { openGraph } from "@/lib/open-graph";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
@@ -27,11 +27,11 @@ export default function Seo(props: SeoProps) {
     ? `${props.templateTitle} | ${meta.siteName}`
     : meta.title;
 
-  meta["image"] = openGraph({
-    description: meta.description,
-    siteName: props.templateTitle ? meta.siteName : meta.title,
-    templateTitle: props.templateTitle,
-  });
+  // meta["image"] = openGraph({
+  //   description: meta.description,
+  //   siteName: props.templateTitle ? meta.siteName : meta.title,
+  //   templateTitle: props.templateTitle,
+  // });
 
   return (
     <Head>
