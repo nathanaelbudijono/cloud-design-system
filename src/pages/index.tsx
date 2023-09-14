@@ -1,4 +1,3 @@
-import { Framer } from "@/components/core/framer";
 import Seo from "@/components/core/seo";
 import Typography from "@/components/core/typography";
 import ArrowLink from "@/components/links/arrow-link";
@@ -49,11 +48,9 @@ export default function Home() {
       </Typography>
       <section className="mt-5 flex flex-wrap justify-center gap-2 max-w-5xl">
         {cards.map((item, index) => (
-          <Framer key={index} delay={index * 0.15}>
-            <ButtonLink variant="outline" size="sm" href={item.link}>
-              {item.title}
-            </ButtonLink>
-          </Framer>
+          <ButtonLink variant="outline" size="sm" href={item.link}>
+            {item.title}
+          </ButtonLink>
         ))}
       </section>
       <footer className="absolute bottom-2 flex items-center gap-1">
