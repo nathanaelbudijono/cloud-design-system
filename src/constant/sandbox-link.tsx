@@ -57,6 +57,10 @@ const sandbox = {
       link: "/sandbox/text-area-input",
     },
     {
+      title: "Select Input",
+      link: "/sandbox/select-input",
+    },
+    {
       title: "Date Picker",
       link: "/sandbox/date-picker",
     },
