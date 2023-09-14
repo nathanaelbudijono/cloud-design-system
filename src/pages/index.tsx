@@ -48,7 +48,7 @@ export default function Home() {
       </Typography>
       <section className="mt-5 flex flex-wrap justify-center gap-2 max-w-5xl">
         {cards.map((item, index) => (
-          <ButtonLink variant="outline" size="sm" href={item.link}>
+          <ButtonLink key={index} variant="outline" size="sm" href={item.link}>
             {item.title}
           </ButtonLink>
         ))}
