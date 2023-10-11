@@ -9,7 +9,7 @@ const defaultMeta = {
   url: "https://cloud-design-system.vercel.app/",
   type: "website",
   robots: "follow, index",
-  image: "https://cloud-design-system.vercel.app/clouds-logo.png",
+  image: "https://cloud-design-system.vercel.app/cloud-logo.png",
 };
 
 type SeoProps = {
